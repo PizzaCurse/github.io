@@ -66,13 +66,76 @@ p
 {
 	text-align: center;
 	color: #fff;
+	text-shadow: -1px 1px #242526;
+	font-weight: bold;
+}
+
+#bottom
+{
+	position: absolute;
+	bottom: 10px;
+	color: #ddd;
+	width: 99%;
+	text-align: center;
+	font-size: .7em;
+	text-shadow: -1px 1px #242526;
+}
+
+@media (min-width:320px)
+{
+	img
+	{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		width: 80%;
+	}
+	
+	.iconImage
+	{
+		margin-top: 30%;
+		margin-bottom: 10%;
+	}
+	
+	p
+	{
+		font-size:  0.75em;
+	}
+}
+
+@media (min-width:480px)
+{
+	img
+	{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		width: 40%;
+	}
+	
+	.iconImage
+	{
+		margin-top: 10%;
+		margin-bottom: 5%;
+	}
+	
+	p
+	{
+		font-size:  1em;
+	}
 }
 </style>
 
 </head>
 
 <body>
+<!-- so developer tools work -->
+<meta name="viewport" content="width=device-width">
 <div class="iconImage"><img src="images/pizzacurse_logo.png"/></div>
 <p>We make <a href="http://www.realwinnersgame.com">Real Winners: Victoryball</a>. Follow us on <a href="https://twitter.com/PizzaCurseS">Twitter</a>.</p>
+
+	<div id="bottom">
+		Made in Chicago
+	</div>
 </body>
 </html>
