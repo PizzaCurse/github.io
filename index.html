@@ -18,18 +18,32 @@ body
 	font-family: 'Droid Sans', sans-serif;
 }
 
-.iconImage
+.logoIconDiv
 {
 	margin-top: 10%;
 	margin-bottom: 5%;
 }
 
-img
+.logo
 {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
 	width: 40%;
+}
+
+.gameIconDiv
+{
+	margin-top: 0%;
+	margin-bottom: 3%;
+}
+
+.gameIcon
+{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 30%;
 }
 
 a 
@@ -86,39 +100,58 @@ p
 	text-shadow: -1px 1px #242526;
 }
 
+#listTop
+{
+	margin-top: 5%;
+	font-size:  .75em;
+	text-align: center;
+	color: #fff;
+	font-weight: 900;
+}
+
 @media (min-width:320px)
 {
-	img
+	.logo
 	{
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
 		width: 80%;
 	}
 	
-	.iconImage
+	.logoIconDiv
 	{
 		margin-top: 30%;
 		margin-bottom: 10%;
+	}
+	
+	.gameIcon
+	{
+		width: 70%;
 	}
 	
 	p
 	{
 		font-size:  0.75em;
 	}
+	
+	#listTop
+	{
+		margin-top: 10%;
+		font-size:  .8em;
+	}
 }
 
 @media (min-width:480px)
 {
-	img
+	.logo
 	{
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
 		width: 40%;
 	}
 	
-	.iconImage
+	.gameIcon
+	{
+		width: 30%;
+	}
+	
+	.logoIconDiv
 	{
 		margin-top: 10%;
 		margin-bottom: 5%;
@@ -128,6 +161,12 @@ p
 	{
 		font-size:  1em;
 	}
+	
+	#listTop
+	{
+		margin-top: 5%;
+		font-size:  .75em;
+	}
 }
 </style>
 
@@ -136,9 +175,10 @@ p
 <body>
 <!-- so developer tools work -->
 <meta name="viewport" content="width=device-width">
-<div class="iconImage"><img src="images/pizzacurse_logo.png"/></div>
-<p>We make <a href="http://www.realwinnersgame.com">Real Winners: Victoryball</a>. Follow us on <a href="https://twitter.com/PizzaCurseS">Twitter</a>.</p>
-
+<div class="logoIconDiv"><img class="logo" src="images/pizzacurse_logo.png"/></div>
+<p>We make <a href="https://twitter.com/RealWinnersGame">Video Games</a>. Follow us on <a href="https://twitter.com/PizzaCurseS">Twitter</a>.</p>
+<div id="listTop">GAMES:</p>
+<div class="gameIconDiv"><a href="http://www.realwinnersgame.com"><img class="gameIcon" src="images/RW_name_text.png"/></a></div>
 	<div id="bottom">
 		Made in Chicago
 	</div>
